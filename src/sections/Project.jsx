@@ -2,11 +2,13 @@ import { ArrowUpRight, Code2 } from "lucide-react";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 
 
+const base = import.meta.env.BASE_URL;
+
 const projects = [
     {
         title:"E-Commerce Website",
         description:"ReactJs Django E-Commerce Website",
-        image:"/projects/E-commers.png",
+        image:`${base}projects/E-commers.png`,
         tags:["Django", "ReactJs", "PostgreSql", "TailwindCss", "RestApi"],
         link:"#",
         github:"#",
@@ -14,7 +16,7 @@ const projects = [
     {
         title:"Car Web Page",
         description:"This is a car web page",
-        image:"/projects/car-web-page.png",
+        image:`${base}projects/car-web-page.png`,
         tags:["HTML", "CSS", "JavaScript" ],
         link:"#",
         github:"#",
@@ -22,7 +24,7 @@ const projects = [
     {
         title:"My Portfolio",
         description:"React Base Portfolio",
-        image:"/projects/React-portfolio.png",
+        image:`${base}projects/React-portfolio.png`,
         tags:["React", "TailwindCSS", "javascript"],
         link:"#",
         github:"#",
@@ -30,7 +32,7 @@ const projects = [
     {
         title:"Online Gas Booking",
         description:"Django Online Gas Booking System",
-        image:"/projects/onlinegas.png",
+        image:`${base}projects/onlinegas.png`,
         tags:["Django", "Sqllite", "css"],
         link:"#",
         github:"#",

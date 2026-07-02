@@ -24,10 +24,12 @@ const skills = [
 ];
 
 export const Hero = () => {
+    const base = import.meta.env.BASE_URL;
+
     return <section className="relative min-h-screen flex items-center overflow-hidden">
         {/* Bg */}
         <div className="absolute inset-0">
-            <img src="/public/hero-bg.jpg" 
+            <img src={`${base}hero-bg.jpg`} 
             alt="hero-bg"
             className="w-full h-full object-cover opacity-40" />
             <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/80 to-background" />
@@ -92,7 +94,7 @@ export const Hero = () => {
                                 Contact Me <ArrowRight className="w-5 h-5" />
                             </Button>
                         </a>
-                        <a href="public\Pravudatta-software-heizen.pdf" download target="_blank" rel="noopener noreferrer">
+                        <a href={`${base}Pravudatta-software-heizen.pdf`} download target="_blank" rel="noopener noreferrer">
                             <AnimatedBorderButton>
                                 <Download className="w-5 h-5" />
                                 Download CV
@@ -127,7 +129,7 @@ export const Hero = () => {
                             from-primary/30 via-transparent to-primary/10 blur-2xl
                              animated-pluse"/>
                             <div className="relative glass rounded-3xl p-2 glow-border">
-                                <img src='/public/my-image.png'
+                                <img src={`${base}my-image.png`}
                                  alt="Pravudatta kath" 
                                  className=" w-full aspect-[4/5] object-cover rounded-2xl" />
                                  {/* Floating badge*/}
